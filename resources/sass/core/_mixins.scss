@@ -1,4 +1,11 @@
 
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 {
+		@return 0
+	}
+	
+	@return $target / $context + 0em;
+}
 
 @mixin font($fontSize, $lineHeight, $basicFontSize: $basicFontSize) {
   font-size: ($fontSize/$basicFontSize)+em;

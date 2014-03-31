@@ -8,19 +8,19 @@
 
 @mixin media($point) {
   @if $point == desktop {
-    @media screen and (min-width: 1025px) { @content; }
+    @media screen and (min-width: $desktop) { @content; }
   }
   @if $point == tabletH {
-    @media screen and (max-width: 1024px)  { @content; }
+    @media screen and (min-width: $tabletH)  { @content; }
   }
   @if $point == tabletV {
-    @media screen and (max-width: 768px)  { @content; }
+    @media screen and (max-width: $tabletV)  { @content; }
   }
-  @else if $point == mobileH { //Used for both mobile and print
-    @media only print, only screen and (max-width: 568px)  { @content; }
+  @else if $point == mobileH {
+    @media screen and (max-width: $mobileH)  { @content; }
   }
   @else if $point == mobileV {
-    @media screen and (max-width: 320px)  { @content; }
+    @media screen and (max-width: $mobileV)  { @content; }
   }
 }
 

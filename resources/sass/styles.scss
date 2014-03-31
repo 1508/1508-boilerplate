@@ -1,50 +1,42 @@
-﻿/* Compass variables
-------------------------------*/
-$legacy-support-for-ie6: 		false; //IE6 + 7
-$legacy-support-for-ie7: 		false; // Set to true, if you want IE7 support
-$legacy-support-for-ie8: 		true; //IE 8
-$legacy-support-for-mozilla: 	false; //Mozilla 3.6 and below
-$experimental-support-for-svg: 	true; //IE9 is using this for gradients
-$experimental-support-for-pie: 	false; //PIE framework
+﻿//COMPASS VARIABLES
+$legacy-support-for-ie6: 		false; 	//IE6 + 7
+$legacy-support-for-ie7: 		false; 	// Set to true, if you want IE7 support
+$legacy-support-for-ie8: 		true; 	//IE 8
+$legacy-support-for-mozilla: 	false; 	//Mozilla 3.6 and below
+$experimental-support-for-svg: 	true; 	//IE9 is using this for gradients
+$experimental-support-for-pie: 	false; 	//PIE framework
 
 
-/* Compass
-------------------------------*/
+//COMPASS
 @import "compass";
 @import "compass/css3";
+@import "compass/css3/box-shadow";
 @import "compass/layout/sticky-footer";
 
 
-/* Core Variables
-------------------------------*/
-@import "core/variables"; //Must come before bootstrap in order to overwrite its default variables.
+//VARIABLES
+@import "global/variables";
 
 
-/* Animation
-------------------------------*/
-//@import "animation/core";
-//@import "animation/animate";
-
-
-/* Semantic
-------------------------------*/
-$wrapper-max-width: 1020px;
-$column-width: 	60px;
-$gutter-width: 	20px;
-$columns: 		12;
-$liquid-grid: 	true; //True == % || False == px
-@import "semantic/grid"; //Semantic
-
-
-//Fonts
-$font-size: 16; // Body font-size
-$basefont: 'sans-serif', sans-serif;
-
-/* Core
-------------------------------*/
+//CORE
 @import "core";
 
 
-/* Modules
-------------------------------*/
+//GRID
+@import "grid"; //Semantic grid
+
+
+//GLOBAL
+@import "global";
+
+
+//MODULES
 @import "modules";
+
+
+//PRINT
+@import "print";
+
+
+//Help - Delete-able
+@import "help";

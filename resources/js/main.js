@@ -1,5 +1,6 @@
 requirejs([
-		'jquery'
+		'jquery',
+        'analytics'
 		],
 	function($) {
 

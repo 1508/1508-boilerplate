@@ -1,11 +1,11 @@
-﻿@import "modules/top";
-@import "modules/logo";
-@import "modules/service";
-@import "modules/topNav";
+﻿@import "modules/footer",
+		"modules/header",
+		"modules/modulesName";
 
-@import "modules/main";
-@import "modules/sections";
-@import "modules/footer";
+// -------------STYLEGUIDE DESCRIPTION------------
+/*
 
-// Spots
-@import "modules/modulesName"
+# Modules
+Importing .scss files from modules/*.scss
+
+*/

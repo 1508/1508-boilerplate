@@ -1,7 +1,8 @@
-﻿@import "core/media-queries";
-@import "core/reset";
-@import "core/typography";
-@import "core/globals";
-@import "core/icons";
-@import "core/sprites";
-@import "core/mixins";
+﻿@import "core/media-queries",
+		"core/normalize",
+		"core/mixins",
+		"core/objects";
+
+body{
+    background-color: orange;
+}

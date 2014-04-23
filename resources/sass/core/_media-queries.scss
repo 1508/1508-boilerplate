@@ -22,6 +22,12 @@
   @else if $point == mobileV {
     @media screen and (max-width: $mobileV)  { @content; }
   }
+  @else if $point == retina {
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { @content; }
+  }
+  @else if $point == print {
+    @media print { @content; }
+  }
 }
 
 
